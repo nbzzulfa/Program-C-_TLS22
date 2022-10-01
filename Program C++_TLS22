@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int gender;
+	float berat, tinggi, bmi, meter;
+	
+	cout<<"1. Laki-laki"<<endl;
+	cout<<"2. Perempuan"<<endl;
+	
+	cout<<"Masukan jenis kelamin 1 atau 2 : ";
+	cin>>gender;
+	cout<<"Masukan berat	: ";
+	cin>>berat;
+	cout<<"Masukan tinggi	: ";
+	cin>>tinggi;
+	
+	meter=tinggi/100;
+	
+	bmi=(berat/(meter*meter));
+	
+	cout<<endl;
+
+	cout<<"BMI		: "<<bmi<<" ";
+	
+	if (bmi<18.5){
+        cout<<"(Kurus)"<<endl;
+    }else if (bmi<=24.9){
+        cout<<"(Normal)"<<endl;
+    }else if (bmi<29.9){
+        cout<<"(Overweight)"<<endl;
+    }else {
+        cout<<"(Obesitas)"<<endl;
+    }
+    
+return 0;
+    }
+    
